@@ -28,8 +28,10 @@ export default function Stages() {
 
   return (
     <div>
-      <h2>Stages</h2>
-      <button onClick={() => history.goBack()}>Back</button>
+      <div className={styles.topBar}>
+        <h2>Stages</h2>
+        <button onClick={() => history.goBack()}>Back</button>
+      </div>
       <ul className={styles.stages}>
         {query.data &&
           query.data.data.stages.map((stage) => (
