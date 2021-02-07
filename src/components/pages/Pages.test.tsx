@@ -18,7 +18,7 @@ describe('App', () => {
       </Router>,
     );
 
-    expect(screen.getByAltText('Loading...')).toBeInTheDocument();
+    expect(screen.getByText('Loading...')).toBeInTheDocument();
 
     expect(await screen.findByText('first post')).toBeInTheDocument();
   });
